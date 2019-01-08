@@ -1,0 +1,14 @@
+apiVersion: cache.thomas.com/v1beta1
+kind: ShardingRedis
+metadata:
+  namespace: redis
+  labels:
+    controller-tools.k8s.io: "1.0"
+  name: shardingredis-sample
+spec:
+  replicas: 3
+  resources:
+    requests:
+      cpu: 200m
+      memory: 100Mi
+  image: redis

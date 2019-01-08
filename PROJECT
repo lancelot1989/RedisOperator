@@ -1,0 +1,3 @@
+version: "1"
+domain: thomas.com
+repo: github.com/lancelot1989/RedisOperator
